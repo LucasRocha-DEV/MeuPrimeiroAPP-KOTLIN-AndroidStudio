@@ -17,9 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="A Jornada Começa:
-
-Imagine-se como um(a) alquimista digital, transformando linhas de código em aplicativos que podem mudar a vida das pessoas. Cada tecla pressionada é um passo em direção à criação de algo único e valioso."
+        android:text="@string/titulo"
         />
 
     <TextView
@@ -27,7 +25,7 @@ Imagine-se como um(a) alquimista digital, transformando linhas de código em apl
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:autoLink="web"
-        android:text="Visite o meu GitHub"
+        android:text="@string/visite_github"
         app:layout_constraintStart_toStartOf="@+id/PRIMEIROTEXTO"
         app:layout_constraintTop_toBottomOf="@+id/PRIMEIROTEXTO" />
 
@@ -38,7 +36,7 @@ Imagine-se como um(a) alquimista digital, transformando linhas de código em apl
         android:autoLink="web"
         android:backgroundTint="#4CAF50"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="GitHub"
+        android:text="@string/visite_github"
         app:layout_constraintStart_toStartOf="@+id/LinkGit"
         app:layout_constraintTop_toBottomOf="@+id/LinkGit" />
 </androidx.constraintlayout.widget.ConstraintLayout>

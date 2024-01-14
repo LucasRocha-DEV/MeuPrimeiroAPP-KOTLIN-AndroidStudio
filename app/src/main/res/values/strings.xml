@@ -10,4 +10,6 @@
     <string name="paragrafo4">O design de interfaces é sua paleta de cores. Cada botão, cada animação, cada layout é uma expressão artística. Lembre-se de que a beleza não está apenas na estética, mas também na usabilidade e na experiência do usuário.</string>
     <string name="subtitulo4">A Busca Pela Eficiência:</string>
     <string name="paragrafo5">O desenvolvimento mobile é como uma dança entre recursos limitados e ambições ilimitadas. Otimização é sua coreografia. Cada linha de código deve ser eficiente, cada recurso deve ser usado com sabedoria. Afinal, você está dançando no palco de dispositivos com baterias limitadas e memória restrita.</string>
+
+    <string name="visite_github">Visite o meu GitHub</string>
 </resources>

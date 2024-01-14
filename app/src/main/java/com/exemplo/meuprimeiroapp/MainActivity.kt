@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         PrimeiroTexto.text = textofinal
 
         val textView = findViewById<TextView>(R.id.LinkGit)
-        val text = "Visite meu GitHub: https://github.com/hawkbombinha/MeuPrimeiroAPP-KOTLIN-AndroidStudio.git"
+        val text = getString(R.string.visite_github) + " https://github.com/hawkbombinha/MeuPrimeiroAPP-KOTLIN-AndroidStudio.git"
         val spannableString = SpannableString(text)
         val start = text.indexOf("https://")
         val end = start + "https://github.com/hawkbombinha/MeuPrimeiroAPP-KOTLIN-AndroidStudio.git".length
