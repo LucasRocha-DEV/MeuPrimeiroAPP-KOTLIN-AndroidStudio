@@ -1,11 +1,18 @@
 package com.exemplo.meuprimeiroapp
 
+import android.content.Intent
 import android.graphics.Typeface
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.SpannableString
 import android.text.SpannableStringBuilder
+import android.text.Spanned
+import android.text.method.LinkMovementMethod
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
+import android.text.style.URLSpan
+import android.widget.Button
 import android.widget.TextView
 import androidx.core.text.inSpans
 
@@ -42,5 +49,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         PrimeiroTexto.text = textofinal
+
+        val textView = findViewById<TextView>(R.id.LinkGit)
+        val text = "Visite meu GitHub: https://github.com/hawkbombinha/MeuPrimeiroAPP-KOTLIN-AndroidStudio.git"
+        val spannableString = SpannableString(text)
+        val start = text.indexOf("https://")
+        val end = start + "https://github.com/hawkbombinha/MeuPrimeiroAPP-KOTLIN-AndroidStudio.git".length
+        spannableString.setSpan(URLSpan("https://github.com/hawkbombinha/MeuPrimeiroAPP-KOTLIN-AndroidStudio.git"), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        textView.text = spannableString
+        textView.movementMethod = LinkMovementMethod.getInstance()
+
+        val ButtonGit = findViewById<Button>(R.id.button)
+        ButtonGit.setOnClickListener {
+            val url = "https://github.com/hawkbombinha/MeuPrimeiroAPP-KOTLIN-AndroidStudio.git"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
     }
 }
