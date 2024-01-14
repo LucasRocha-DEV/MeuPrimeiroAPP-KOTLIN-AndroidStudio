@@ -14,55 +14,29 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val PrimeiroTexto = findViewById<TextView>(R.id.PRIMEIROTEXTO)
-        val string1 = getString(R.string.titulo)
-        val string2 = getString(R.string.paragrafo1)
-        val string3 = getString(R.string.subtitulo1)
-        val string4 = getString(R.string.paragrafo2)
-        val string5 = getString(R.string.subtitulo2)
-        val string6 = getString(R.string.paragrafo3)
-        val string7 = getString(R.string.subtitulo3)
-        val string8 = getString(R.string.paragrafo4)
-        val string9 = getString(R.string.subtitulo4)
-        val string10 = getString(R.string.paragrafo5)
+
+        val strings = listOf(
+            Pair(R.string.titulo, R.color.titulo),
+            Pair(R.string.paragrafo1, R.color.paragrafo),
+            Pair(R.string.subtitulo1, R.color.subtitulo),
+            Pair(R.string.paragrafo2, R.color.paragrafo),
+            Pair(R.string.subtitulo2, R.color.subtitulo),
+            Pair(R.string.paragrafo3, R.color.paragrafo),
+            Pair(R.string.subtitulo3, R.color.subtitulo),
+            Pair(R.string.paragrafo4, R.color.paragrafo),
+            Pair(R.string.subtitulo4, R.color.subtitulo),
+            Pair(R.string.paragrafo5, R.color.paragrafo)
+        )
 
         val textofinal = SpannableStringBuilder().apply {
-            inSpans(ForegroundColorSpan(getColor(R.color.titulo))) {
-            append(string1) }
-            append("\n")
-            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.paragrafo))) {
-                append(string2)
-            }
-            append("\n\n")
-            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.subtitulo))) {
-            append(string3)
-            }
-            append("\n")
-            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.paragrafo))) {
-                append(string4)
-            }
-            append("\n\n")
-            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.subtitulo))) {
-                append(string5)
-            }
-            append("\n")
-            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.paragrafo))) {
-                append(string6)
-            }
-            append("\n\n")
-            append(string7)
-            append("\n")
-            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.subtitulo))) {
-                append(string8)
-            }
-            append("\n\n")
-            append(string9)
-            append("\n")
-            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.paragrafo))) {
-                append(string10)
+            for ((stringId, colorId) in strings) {
+                inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(colorId))) {
+                    append(getString(stringId))
+                }
+                append("\n\n")
             }
         }
 
         PrimeiroTexto.text = textofinal
     }
-
 }
