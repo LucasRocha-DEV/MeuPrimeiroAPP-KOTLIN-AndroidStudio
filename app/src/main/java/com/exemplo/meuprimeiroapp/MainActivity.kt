@@ -33,7 +33,11 @@ class MainActivity : AppCompatActivity() {
                 inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(colorId))) {
                     append(getString(stringId))
                 }
-                append("\n\n")
+                if (stringId in listOf(R.string.paragrafo1, R.string.paragrafo2, R.string.paragrafo3, R.string.paragrafo4, R.string.paragrafo5)) {
+                    append("\n\n")
+                } else {
+                    append("\n")
+                }
             }
         }
 
