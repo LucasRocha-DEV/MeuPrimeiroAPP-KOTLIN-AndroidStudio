@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MeuPrimeiroAPP</string>
+    <string name="titulo">O Caminho do Desenvolvedor Mobile</string>
+    <string name="paragrafo1">Em um mundo cada vez mais conectado, onde nossos dispositivos móveis se tornaram extensões de nossas mãos, o desenvolvimento mobile ganha uma relevância sem precedentes. Como um(a) aspirante a desenvolvedor(a) mobile, você está trilhando um caminho repleto de desafios, mas também de infinitas possibilidades.</string>
+    <string name="subtitulo1">A Jornada Começa:</string>
+    <string name="paragrafo2">Imagine-se como um(a) alquimista digital, transformando linhas de código em aplicativos que podem mudar a vida das pessoas. Cada tecla pressionada é um passo em direção à criação de algo único e valioso.</string>
+    <string name="subtitulo2">A Linguagem Universal:</string>
+    <string name="paragrafo3">A linguagem que você escolheu para desenvolver aplicativos é como um idioma universal. Ela permite que você se comunique com bilhões de usuários em todo o mundo. Seja Java, Kotlin, Swift ou JavaScript, cada símbolo que você escreve é uma nota em uma sinfonia digital.</string>
+    <string name="subtitulo3">A Arte da Interface:</string>
+    <string name="paragrafo4">O design de interfaces é sua paleta de cores. Cada botão, cada animação, cada layout é uma expressão artística. Lembre-se de que a beleza não está apenas na estética, mas também na usabilidade e na experiência do usuário.</string>
+    <string name="subtitulo4">A Busca Pela Eficiência:</string>
+    <string name="paragrafo5">O desenvolvimento mobile é como uma dança entre recursos limitados e ambições ilimitadas. Otimização é sua coreografia. Cada linha de código deve ser eficiente, cada recurso deve ser usado com sabedoria. Afinal, você está dançando no palco de dispositivos com baterias limitadas e memória restrita.</string>
+</resources>
