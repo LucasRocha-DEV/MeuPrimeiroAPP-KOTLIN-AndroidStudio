@@ -4,8 +4,8 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.SpannableStringBuilder
+import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
-import android.util.Log
 import android.widget.TextView
 import androidx.core.text.inSpans
 
@@ -26,37 +26,41 @@ class MainActivity : AppCompatActivity() {
         val string10 = getString(R.string.paragrafo5)
 
         val textofinal = SpannableStringBuilder().apply {
-            append(string1)
+            inSpans(ForegroundColorSpan(getColor(R.color.titulo))) {
+            append(string1) }
             append("\n")
-            inSpans(StyleSpan(Typeface.BOLD)) {
+            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.paragrafo))) {
                 append(string2)
             }
             append("\n\n")
+            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.subtitulo))) {
             append(string3)
+            }
             append("\n")
-            inSpans(StyleSpan(Typeface.BOLD)) {
+            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.paragrafo))) {
                 append(string4)
             }
             append("\n\n")
-            append(string5)
+            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.subtitulo))) {
+                append(string5)
+            }
             append("\n")
-            inSpans(StyleSpan(Typeface.BOLD)) {
+            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.paragrafo))) {
                 append(string6)
             }
             append("\n\n")
             append(string7)
             append("\n")
-            inSpans(StyleSpan(Typeface.BOLD)) {
+            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.subtitulo))) {
                 append(string8)
             }
             append("\n\n")
             append(string9)
             append("\n")
-            inSpans(StyleSpan(Typeface.BOLD)) {
+            inSpans(StyleSpan(Typeface.BOLD), ForegroundColorSpan(getColor(R.color.paragrafo))) {
                 append(string10)
             }
         }
-
 
         PrimeiroTexto.text = textofinal
     }
