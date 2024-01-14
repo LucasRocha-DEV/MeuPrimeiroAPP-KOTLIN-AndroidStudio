@@ -32,7 +32,13 @@ class MainActivity : AppCompatActivity() {
             Pair(R.string.subtitulo3, R.color.subtitulo),
             Pair(R.string.paragrafo4, R.color.paragrafo),
             Pair(R.string.subtitulo4, R.color.subtitulo),
-            Pair(R.string.paragrafo5, R.color.paragrafo)
+            Pair(R.string.paragrafo5, R.color.paragrafo),
+            Pair(R.string.subtitulo5, R.color.subtitulo),
+            Pair(R.string.paragrafo6, R.color.paragrafo),
+            Pair(R.string.subtitulo6, R.color.subtitulo),
+            Pair(R.string.paragrafo7, R.color.paragrafo),
+            Pair(R.string.subtitulo7, R.color.subtitulo),
+            Pair(R.string.paragrafo8, R.color.paragrafo)
         )
 
         val textofinal = SpannableStringBuilder().apply {

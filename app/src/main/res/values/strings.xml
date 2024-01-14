@@ -10,6 +10,12 @@
     <string name="paragrafo4">O design de interfaces é sua paleta de cores. Cada botão, cada animação, cada layout é uma expressão artística. Lembre-se de que a beleza não está apenas na estética, mas também na usabilidade e na experiência do usuário.</string>
     <string name="subtitulo4">A Busca Pela Eficiência:</string>
     <string name="paragrafo5">O desenvolvimento mobile é como uma dança entre recursos limitados e ambições ilimitadas. Otimização é sua coreografia. Cada linha de código deve ser eficiente, cada recurso deve ser usado com sabedoria. Afinal, você está dançando no palco de dispositivos com baterias limitadas e memória restrita.</string>
+    <string name="subtitulo5">A Comunidade e a Colaboração:</string>
+    <string name="paragrafo6">Não caminhe sozinho(a). A comunidade de desenvolvedores é sua tribo. Compartilhe conhecimento, aprenda com os outros, participe de hackathons e eventos. Juntos, vocês podem construir algo maior do que qualquer um poderia fazer sozinho.</string>
+    <string name="subtitulo6">A Persistência e a Curiosidade:</string>
+    <string name="paragrafo7">Haverá momentos de frustração, bugs inexplicáveis e desafios aparentemente insuperáveis. Mas lembre-se: cada erro é uma oportunidade de aprendizado. Seja curioso(a), investigue, experimente. Aprenda a amar os problemas, pois são eles que o(a) tornarão um(a) desenvolvedor(a) melhor.</string>
+    <string name="subtitulo7">O Futuro e Além:</string>
+    <string name="paragrafo8">O desenvolvimento mobile não é apenas sobre o presente; é sobre moldar o futuro. Você está criando aplicativos que podem impactar a educação, a saúde, o entretenimento e muito mais. Seu código pode ser a faísca que acende uma revolução digital.</string>
 
     <string name="visite_github">Visite o meu GitHub</string>
 </resources>
